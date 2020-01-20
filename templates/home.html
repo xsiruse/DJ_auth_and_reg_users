@@ -7,7 +7,7 @@
     <div class="container">
         <div class="header"></div>
         {% if request.user.is_authenticated %}
-            Привет, {{ request.user.username }} <br>
+            Привет, <b>{{ request.user.username }}</b> <br>
             <div><a href="{% url 'signup' %}">Зарегистрировать нового пользователя</a> </div>
             <div><a href="{% url 'login' %}">Войти под другим пользователем</a> </div>
             <div><a href="{% url 'logout' %}">Выход</a></div>
